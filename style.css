@@ -108,7 +108,7 @@ a {
     align-items: center;
     padding-right: 27%;
   }
- 
+
   #menu {
     list-style: none;
     display: flex;
@@ -128,7 +128,7 @@ a {
     border: 5px solid var(--primary-theme-color);
     padding: 2% 5%;
   }
- 
+
   /* RESPONSIVE DISPLAY */
   .mobileOnly {
     display: none;
