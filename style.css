@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400&display=swap');
+:root {
+  --nav-bg-color: #fff;
+  --primary-font-color: #4e4e4e;
+  --primary-theme-color: #ec5242;
+  --main-padding: 1rem;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* NAV SECTION STYLES */
+#navSection {
+  display: flex;
+  flex-direction: row;
+  background-color: var(--nav-bg-color);
+  justify-content: start;
+  padding-left: 5%;
+}
+
+#menu {
+    display: none;
+}
+
+#menu.active {
+    display: flex;
+    flex-direction: column;
+    background: var(--primary-theme-color);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    list-style: none;
+    color: var(--nav-bg-color);
+    font-size: 2rem;
+    margin-top: 0;
+}
+
+.active #menuCloseIcon {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  padding-right: 10%;
+}
+
+.active .menuItems {
+  padding-top: 3%;
+}
+
+.active #menuBtn {
+   margin-top: 10%; 
+}
+
+.active #menuBtn:hover {
+    background-color: var(--nav-bg-color);
+    color: var(--primary-theme-color);
+}
+
+.active .outlineBtns {
+  border: 5px solid var(--nav-bg-color);
+  padding: 5% 5%;
+  width: 50%;
+  text-align: center;
+}
+
+/* TRANSITIONS AND ANIMATIONS */
+.animBtns {
+    transition-property: background-color, color;
+    transition-duration: 0.4s;
+    transition-delay: 0.1s, 0.2s;
+}
+
+/* RESPONSIVE DISPLAY */
+.desktopOnly {
+  display: none;
+}
+
+.mobileOnly {
+    display: flex;
+  }
+
+@media only screen and (min-width: 768px) {
+  #logo {
+      text-align: right;
+  }
+
+  #navSection {
+    justify-content: end;
+  }
+  
+  #menuContainer {
+    flex: 95%;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    color: var(--primary-font-color);
+    align-items: center;
+    padding-right: 27%;
+  }
+  
+  #menu { 
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+  }
+  
+  .menuItems {
+    font-weight: 700;
+    padding-right: 9%;
+    padding-top: 2%;
+    text-decoration: none;
+  }
+
+  .outlineBtns {
+    font-weight: 700;
+    border: 5px solid var(--primary-theme-color);
+    padding: 2% 5%;
+  }
+   
+  /* RESPONSIVE DISPLAY */
+  .mobileOnly {
+    display: none;
+  }
+
+  .desktopOnly {
+    display: flex;
+  }
+}
