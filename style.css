@@ -58,7 +58,7 @@ a {
 }
 
 .active #menuBtn {
-   margin-top: 10%; 
+  margin-top: 10%;
 }
 
 .active #menuBtn:hover {
@@ -87,18 +87,18 @@ a {
 
 .mobileOnly {
   display: flex;
-  }
+}
 
 /* DESKTOP ONLY STYLE RULES */
 @media only screen and (min-width: 768px) {
   #logo {
-      text-align: right;
+    text-align: right;
   }
 
   #navSection {
     justify-content: end;
   }
-  
+
   #menuContainer {
     flex: 95%;
     display: flex;
@@ -108,14 +108,14 @@ a {
     align-items: center;
     padding-right: 27%;
   }
-  
-  #menu { 
+ 
+  #menu {
     list-style: none;
     display: flex;
     flex-direction: row;
     align-content: center;
   }
-  
+
   .menuItems {
     font-weight: 700;
     padding-right: 9%;
@@ -128,7 +128,7 @@ a {
     border: 5px solid var(--primary-theme-color);
     padding: 2% 5%;
   }
-   
+ 
   /* RESPONSIVE DISPLAY */
   .mobileOnly {
     display: none;
