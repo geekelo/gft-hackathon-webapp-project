@@ -8,8 +8,16 @@
     <link rel="stylesheet" href="./style.css" type="text/css">
 </head>
 <body>
-    <!-- navigation section -->
-    <header id="navSection">
+    <!-- NAVIGATION SECTION -->
+    <header>
+        <ul id="navTopbar" class="desktopOnly">
+            <li class="navtopTexts"><a href="#"><img src="./media-library/facebook-icon.png" alt="facebook-icon" width="20"></a></li>
+            <li class="navtopTexts"><a href="#"></a><img src="./media-library/twitter-icon.png" alt="twitter-icon" width="20"></a></li>
+            <li class="navtopTexts"><a href="#"></a>English</a></li>
+            <li class="navtopTexts"><a href="#"></a>My Page</a></li>
+            <li class="navtopTexts"><a href="#"></a>Logout</a></li>
+        </ul>
+      <section id="navSection" class="navMainSection">
         <p id="logo" class="desktopOnly"><img src="./media-library/gft-logo.png" alt="site-logo" width="200" height=""></p>
         <nav id="menuContainer">
             <p id="menuIcon" class="mobileOnly"><img src="./media-library/gft-menu-icon.png" alt="menu-icon" width="" height=""></p>
@@ -22,9 +30,20 @@
                 <li class="menuItems"><a href="#">Contact</a></li>
                 <li id="menuBtn" class="outlineBtns animBtns">Register</li>
             </ul>
-            
         </nav>
+      </section>
     </header>
+
+    <!-- LANDING SECTION -->
+    <section class="landingSection">
+      <div class="landingcontents">
+        <h3 class="introText">Get Ready for the Next</h3>
+        <h1 class="titleText">Global Female Tech Hackathon</h1>
+        <p class="titleSummary">The Global Female Tech Hackathon provides a platform for participants to showcase their innovative projects to a panel of esteemed judges. The winning teams receive recognition, mentorship opportunities, and support to further develop their solutions and bring them to market.</p>
+        <h2 class="titleDetails titleDate">2023.07.03(Mon) - 7(Fri)</h2>
+        <p class="titleDetails titleVenue">@Kingsway Palace, Lekki, Lagos State. Nigeria</p>
+      </div>
+    </section>
     <script src="./index.js"></script>
 </body>
 </html>

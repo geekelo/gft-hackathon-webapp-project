@@ -5,6 +5,9 @@
   --primary-font-color: #4e4e4e;
   --primary-theme-color: #ec5242;
   --main-padding: 1rem;
+  --landingsection-bgImage: url("./media-library/header-bg-img2.jpg");
+  --title-text-color: #fb1404;
+  --navTopbar-bg: #3e3e3e;
 }
 
 body {
@@ -13,18 +16,34 @@ body {
   margin: 0;
 }
 
+header {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
 a {
   text-decoration: none;
   color: inherit;
 }
 
 /* NAV SECTION STYLES */
-#navSection {
+.navMainSection {
   display: flex;
   flex-direction: row;
   background-color: var(--nav-bg-color);
   justify-content: start;
   padding-left: 5%;
+  position: fixed;
+  left: 0;
+  right: 0;
+}
+
+#menuIcon {
+  padding-left: 100%;
 }
 
 #menu {
@@ -35,7 +54,7 @@ a {
   display: flex;
   flex-direction: column;
   background: var(--primary-theme-color);
-  position: absolute;
+  position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
@@ -44,6 +63,7 @@ a {
   color: var(--nav-bg-color);
   font-size: 2rem;
   margin-top: 0;
+  padding-left: 8%;
 }
 
 .active #menuCloseIcon {
@@ -73,6 +93,54 @@ a {
   text-align: center;
 }
 
+/* LANDING SECTION */
+.landingSection {
+  display: flex;
+  flex-direction: column;
+  background-image: var(--landingsection-bgImage);
+  background-size: cover;
+  padding: 10% 10%;
+  color: var(--primary-theme-color);
+}
+
+.introText {
+  margin-bottom: -9%;
+  font-size: 1.9rem;
+}
+
+.titleText {
+  font-weight: 900;
+  font-size: 3.8rem;
+  line-height: 4.2rem;
+  color: var(--title-text-color);
+}
+
+.titleSummary {
+  margin-top: -4%;
+  color: var(--primary-font-color);
+  border: 5px solid white;
+  width: 100%;
+  padding: 1% 1%;
+  font-weight: 700;
+  background-color: #f0f0f0;
+}
+
+.titleDetails {
+  color: var(--primary-font-color);
+}
+
+.titleDate {
+  font-weight: 900;
+  padding-top: 4%;
+  font-size: 2rem;
+  line-height: 0.3rem;
+}
+
+.titleVenue {
+  font-size: 1.2rem;
+  line-height: 1.7rem;
+}
+
 /* TRANSITIONS AND ANIMATIONS */
 .animBtns {
   transition-property: background-color, color;
@@ -91,12 +159,34 @@ a {
 
 /* DESKTOP ONLY STYLE RULES */
 @media only screen and (min-width: 768px) {
-  #logo {
-    text-align: right;
+  #navTopbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    background-color: var(--navTopbar-bg);
+    padding: 1% 11%;
+    list-style: none;
+    color: var(--nav-bg-color);
   }
 
-  #navSection {
-    justify-content: end;
+  .navtopTexts {
+    padding-right: 2%;
+    margin-top: 0;
+  }
+
+  .navMainSection {
+    position: static;
+  }
+
+  .navSectionFix {
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+  }
+
+  #logo {
+    text-align: right;
   }
 
   #menuContainer {
@@ -127,6 +217,36 @@ a {
     font-weight: 700;
     border: 5px solid var(--primary-theme-color);
     padding: 2% 5%;
+  }
+
+  .outlineBtns:hover {
+    background-color: var(--primary-theme-color);
+    color: var(--nav-bg-color);
+  }
+
+  /* LANDING SECTION */
+  .introText {
+    margin-bottom: -5%;
+  }
+
+  .titleText {
+    width: 90%;
+    font-weight: 900;
+    font-size: 4.8rem;
+    line-height: 5.2rem;
+  }
+
+  .titleSummary {
+    width: 60%;
+  }
+
+  .titleDate {
+    line-height: 0.3rem;
+  }
+
+  .titleVenue {
+    font-size: 1.5rem;
+    line-height: 1.7rem;
   }
 
   /* RESPONSIVE DISPLAY */
