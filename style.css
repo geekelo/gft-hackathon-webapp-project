@@ -54,7 +54,7 @@ a {
   display: flex;
   flex-direction: column;
   background: var(--primary-theme-color);
-  position: absolute;
+  position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
@@ -63,6 +63,7 @@ a {
   color: var(--nav-bg-color);
   font-size: 2rem;
   margin-top: 0;
+  padding-left: 8%;
 }
 
 .active #menuCloseIcon {
