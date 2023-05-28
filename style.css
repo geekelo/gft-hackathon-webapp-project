@@ -221,7 +221,7 @@ a {
 
   .outlineBtns:hover {
     background-color: var(--primary-theme-color);
-    color: var(--nav-bg-color)
+    color: var(--nav-bg-color);
   }
 
   /* LANDING SECTION */
