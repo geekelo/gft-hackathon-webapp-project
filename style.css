@@ -38,7 +38,8 @@ a {
   justify-content: start;
   padding-left: 5%;
   position: fixed;
-  width: 100%;
+  left: 0;
+  right: 0;
 }
 
 #menuIcon {
@@ -178,7 +179,8 @@ a {
   
   .navSectionFix {
     position: fixed;
-    width: 100%;
+    right: 0;
+    left: 0;
     top: 0;
   }
   
