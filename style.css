@@ -8,6 +8,8 @@
   --landingsection-bgImage: url("./media-library/header-bg-img2.jpg");
   --title-text-color: #fb1404;
   --navTopbar-bg: #3e3e3e;
+  --hackathon-stages-bg: url('./media-library/stages-bg.jpg');
+  --stages-subcontainers-color: rgba(60, 63, 70, 0.7);
 }
 
 body {
@@ -43,7 +45,7 @@ a {
 }
 
 #menuIcon {
-  padding-left: 100%;
+  padding-left: 80%;
 }
 
 #menu {
@@ -139,6 +141,48 @@ a {
 .titleVenue {
   font-size: 1.2rem;
   line-height: 1.7rem;
+}
+
+/* STAGES SECTION */
+#stagesSection {
+  background-image: var(--hackathon-stages-bg);
+  background-size: cover;
+  display: grid;
+  grid-template-columns: auto;
+  padding: 5% 5%;
+}
+
+#stagesContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.stagesSubcontainers {
+  display: flex;
+  flex-direction: row;
+  background-color: var(--stages-subcontainers-color);
+  padding: 2% 5%;
+  gap: 25px;
+  justify-content: start;
+}
+
+.stagesTitle {
+  width: 8rem;
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  padding-right: 5%;
+  font-size: 0.9rem;
+  color: var(--primary-theme-color);
+}
+
+.stagesImages {
+  width: 2.8rem;
+}
+
+.stagesDescription {
+    color: var(--nav-bg-color);
 }
 
 /* TRANSITIONS AND ANIMATIONS */
@@ -247,6 +291,40 @@ a {
   .titleVenue {
     font-size: 1.5rem;
     line-height: 1.7rem;
+  }
+
+  /* HACKATHON STAGES */
+  #stagesSection {
+    padding: 10%;
+  }
+
+  #stagesContainer {
+    flex-direction: row;
+    padding: 1%;
+    gap: 3px;
+  }
+
+  .stagesSubcontainers {
+    flex-direction: column;
+    gap: 0;
+    padding: 1% 3%;
+    align-items: center;
+    width: 20%;
+  }
+
+  .stagesTitle {
+    flex-direction: column;
+    text-align: center;
+    gap: 1px;
+  }
+
+  .stagesImages {
+    width: 25%;
+  }
+  
+  .stagesDescription {
+    text-align: center;
+    font-size: 0.7rem;
   }
 
   /* RESPONSIVE DISPLAY */
