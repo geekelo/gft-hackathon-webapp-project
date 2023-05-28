@@ -43,7 +43,7 @@ a {
 }
 
 #menuIcon {
-    padding-left: 100%;
+  padding-left: 100%;
 }
 
 #menu {
@@ -132,7 +132,7 @@ a {
 .titleDate {
   font-weight: 900;
   padding-top: 4%;
-  font-size: 2.0rem;
+  font-size: 2rem;
   line-height: 0.3rem;
 }
 
@@ -177,7 +177,7 @@ a {
   .navMainSection {
     position: static;
   }
-  
+ 
   .navSectionFix {
     position: fixed;
     right: 0;
