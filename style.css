@@ -108,7 +108,8 @@ a {
 
 .introText {
   margin-bottom: -9%;
-  font-size: 1.2rem;
+  font-size: 1.8rem;
+  color: var(--title-text-color);
 }
 
 .titleText {
@@ -370,8 +371,10 @@ a {
   .landingSection {
     padding: 10%;
   }
+
   .introText {
     margin-bottom: -5%;
+    font-size: 2.5rem;
   }
 
   .titleText {
