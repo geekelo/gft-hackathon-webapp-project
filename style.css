@@ -8,6 +8,8 @@
   --landingsection-bgImage: url("./media-library/header-bg-img2.jpg");
   --title-text-color: #fb1404;
   --navTopbar-bg: #3e3e3e;
+  --hackathon-stages-bg: url('./media-library/stages-bg.jpg');
+  --stages-subcontainers-color: rgba(60, 63, 70, 0.7);
 }
 
 body {
@@ -43,7 +45,7 @@ a {
 }
 
 #menuIcon {
-  padding-left: 100%;
+  padding-left: 80%;
 }
 
 #menu {
@@ -139,6 +141,76 @@ a {
 .titleVenue {
   font-size: 1.2rem;
   line-height: 1.7rem;
+}
+
+/* STAGES SECTION */
+#stagesSection {
+  background-image: var(--hackathon-stages-bg);
+  background-size: cover;
+  display: grid;
+  grid-template-columns: auto;
+  padding: 7% 5%;
+  color: var(--nav-bg-color);
+}
+
+.stagesSectionTitle {
+  font-size: 1.9rem;
+  line-height: 0rem;
+  font-weight: 400;
+  width: 90%;
+  text-align: center;
+  padding-bottom: 5%;
+}
+
+.redUnderline {
+  width: 15%;
+  border-color: var(--primary-theme-color);
+}
+
+#stagesContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.stagesSubcontainers {
+  display: flex;
+  flex-direction: row;
+  background-color: var(--stages-subcontainers-color);
+  padding: 2% 5%;
+  gap: 25px;
+  justify-content: start;
+}
+
+.stagesTitle {
+  width: 8rem;
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  padding-right: 5%;
+  font-size: 0.9rem;
+  color: var(--primary-theme-color);
+}
+
+.stagesImages {
+  width: 2.8rem;
+}
+
+.stagesDescription {
+  color: var(--nav-bg-color);
+}
+
+.stagesCTA {
+  margin: auto;
+  padding: 5% 6%;
+  background-color: var(--primary-theme-color);
+  margin-top: 6%;
+  box-sizing: border-box;
+}
+
+.stagesCTA:hover {
+  background-color: rgba(0, 0, 0, 0);
+  border: 2px solid var(--primary-theme-color);
 }
 
 /* TRANSITIONS AND ANIMATIONS */
@@ -247,6 +319,79 @@ a {
   .titleVenue {
     font-size: 1.5rem;
     line-height: 1.7rem;
+  }
+
+  /* HACKATHON STAGES */
+  #stagesSection {
+    padding: 5% 10%;
+    text-align: center;
+    row-gap: 50px;
+  }
+
+  .stagesSectionTitle {
+    padding-bottom: 0;
+    margin: auto;
+  }
+
+  #stagesContainer {
+    flex-direction: row;
+    gap: 5px;
+    box-sizing: border-box;
+  }
+
+  .stagesSubcontainers {
+    flex-direction: column;
+    gap: 0;
+    padding: 1% 2%;
+    align-items: center;
+    width: 20%;
+  }
+
+  .stagesSubcontainers:hover {
+    border: 2.5px solid rgba(255, 255, 255, 0.815);
+    transition-property: border;
+    transition-delay: 0.01s;
+    transition-duration: 0.06s;
+    transition-timing-function: ease-in-out;
+  }
+
+  .stagesTitle {
+    flex-direction: column;
+    text-align: center;
+    gap: 0;
+  }
+
+  .stagesTitle h3 {
+    margin-bottom: 0;
+  }
+
+  .stagesImages {
+    width: 25%;
+  }
+
+  .stagesDescription {
+    text-align: center;
+    font-size: 0.7rem;
+    font-weight: 400;
+    letter-spacing: 0.06rem;
+  }
+
+  .stagesCTA {
+    border-bottom: 1px solid var(--nav-bg-color);
+    width: 11%;
+    margin: auto;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  .stagesCTA:hover {
+    border: none;
+    border-bottom: 1px solid var(--primary-theme-color);
+    color: var(--primary-theme-color);
+    transition-property: border-bottom, color;
+    transition-timing-function: ease-out;
+    transition-duration: 0.3s, 0.3s;
+    transition-delay: 0.1s, 0.1s;
   }
 
   /* RESPONSIVE DISPLAY */
