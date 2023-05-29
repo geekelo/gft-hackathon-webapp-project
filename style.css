@@ -197,7 +197,7 @@ a {
 }
 
 .stagesDescription {
-    color: var(--nav-bg-color);
+  color: var(--nav-bg-color);
 }
 
 .stagesCTA {
@@ -358,7 +358,7 @@ a {
   .stagesTitle {
     flex-direction: column;
     text-align: center;
-    gap: 0px;
+    gap: 0;
   }
 
   .stagesTitle h3 {
@@ -368,7 +368,7 @@ a {
   .stagesImages {
     width: 25%;
   }
-  
+
   .stagesDescription {
     text-align: center;
     font-size: 0.7rem;
