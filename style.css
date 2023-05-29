@@ -101,20 +101,22 @@ a {
   flex-direction: column;
   background-image: var(--landingsection-bgImage);
   background-size: cover;
-  padding: 10% 10%;
+  padding: 20% 10%;
+  padding-top: 30%;
   color: var(--primary-theme-color);
 }
 
 .introText {
   margin-bottom: -9%;
-  font-size: 1.9rem;
+  font-size: 1.2rem;
 }
 
 .titleText {
   font-weight: 900;
-  font-size: 3.8rem;
-  line-height: 4.2rem;
+  font-size: 3.3rem;
+  line-height: 3.8rem;
   color: var(--title-text-color);
+  mix-blend-mode: color-burn;
 }
 
 .titleSummary {
@@ -213,6 +215,74 @@ a {
   border: 2px solid var(--primary-theme-color);
 }
 
+/* FEATURED JUDGES SECTION */
+#featuredJudgesSection {
+  padding: 10% 5%;
+  color: var(--navTopbar-bg);
+}
+
+.judgesCardsContainer{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.judgesCards {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  flex-wrap: wrap;
+  font-weight: 900;
+  gap: 10px;
+}
+
+.judgePatternBgs {
+  background-color: #e5e5f7;
+  opacity: 0.8;
+  background-image: radial-gradient( ellipse farthest-corner at 10px 10px , #310d29, #310d29 50%, #e5e5f7 50%);
+  background-size: 10px 10px;
+  width: 50px;
+  height: 50px;
+  top: 0;
+  left: 0;
+  border-radius: 100%;
+  opacity: 0.3;
+  z-index: -1;
+}
+
+.judgeImages {
+  margin-top: 7%;
+  margin-left: -9%;
+}
+
+.judgeContents {
+  width: 60%;
+  margin-top: 4%;
+}
+
+.judgeNames {
+  font-weight: 900;
+  font-size: 1.3rem;
+  line-height: 0;
+}
+
+.judgeIntros {
+  color: var(--primary-theme-color);
+  font-style: italic;
+  font-size: 80%;
+}
+
+.judgeDividers {
+  width: 10%;
+  margin-left: 0;
+}
+
+.judgeDescriptions {
+  font-size: 80%;
+  box-sizing: border-box;
+  font-weight: 700;
+}
+
 /* TRANSITIONS AND ANIMATIONS */
 .animBtns {
   transition-property: background-color, color;
@@ -296,7 +366,10 @@ a {
     color: var(--nav-bg-color);
   }
 
-  /* LANDING SECTION */
+  /* DESKTOP LANDING SECTION */
+  .landingSection {
+    padding: 10%;
+  }
   .introText {
     margin-bottom: -5%;
   }
@@ -321,7 +394,7 @@ a {
     line-height: 1.7rem;
   }
 
-  /* HACKATHON STAGES */
+  /* DESKTOP HACKATHON STAGES */
   #stagesSection {
     padding: 5% 10%;
     text-align: center;
@@ -394,7 +467,41 @@ a {
     transition-delay: 0.1s, 0.1s;
   }
 
-  /* RESPONSIVE DISPLAY */
+  /* DESKTOP FEATURED JUDGES SECTION*/
+  #featuredJudgesSection {
+    padding: 5% 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .judgesCardsContainer {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1px;
+    margin:auto;
+    padding-top: 5%;
+  }
+
+  .judgesCards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex: 45%;
+  }
+
+  .judgeImages {
+    width: 30%;
+    margin-left: -7%;
+    margin-top: 6%;
+  }
+
+  .judgeContents {
+    width: 47%;
+    margin-top: 3%;
+  }
+
+  /* DESKTOP RESPONSIVE DISPLAY */
   .mobileOnly {
     display: none;
   }
