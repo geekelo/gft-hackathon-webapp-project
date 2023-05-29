@@ -222,7 +222,7 @@ a {
   color: var(--navTopbar-bg);
 }
 
-.judgesCardsContainer{
+.judgesCardsContainer {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -239,8 +239,7 @@ a {
 
 .judgePatternBgs {
   background-color: #e5e5f7;
-  opacity: 0.8;
-  background-image: radial-gradient( ellipse farthest-corner at 10px 10px , #310d29, #310d29 50%, #e5e5f7 50%);
+  background-image: radial-gradient(ellipse farthest-corner at 10px 10px, #310d29, #310d29 50%, #e5e5f7 50%);
   background-size: 10px 10px;
   width: 50px;
   height: 50px;
@@ -471,7 +470,7 @@ a {
     transition-delay: 0.1s, 0.1s;
   }
 
-  /* DESKTOP FEATURED JUDGES SECTION*/
+  /* DESKTOP FEATURED JUDGES SECTION */
   #featuredJudgesSection {
     padding: 5% 10%;
     display: flex;
@@ -483,7 +482,7 @@ a {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 1px;
-    margin:auto;
+    margin: auto;
     padding-top: 5%;
   }
 
