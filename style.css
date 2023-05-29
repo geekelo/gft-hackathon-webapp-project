@@ -276,6 +276,7 @@ a {
 .judgeDividers {
   width: 10%;
   margin-left: 0;
+  border-bottom: var(--navTopbar-bg);
 }
 
 .judgeDescriptions {
