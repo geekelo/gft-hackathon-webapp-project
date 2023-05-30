@@ -218,7 +218,7 @@ a {
 
 /* FEATURED JUDGES SECTION */
 #featuredJudgesSection {
-  padding: 10% 5%;
+  padding: 10% 2%;
   color: var(--navTopbar-bg);
 }
 
@@ -283,6 +283,32 @@ a {
   box-sizing: border-box;
   font-weight: 700;
 }
+
+  /* PARTNERS SECTION */
+  .partnerSection {
+    background-color: var(--navTopbar-bg);
+    display: flex;
+    flex-direction: column;
+    padding: 15% 3%;
+    gap: 5px;
+  } 
+
+  .logoContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 18px;
+    flex-wrap: wrap;
+  }
+
+  .partnersSectionTitle {
+    color: var(--nav-bg-color);
+  }
+
+  .partners {
+    filter: grayscale(1);
+  }
 
 /* TRANSITIONS AND ANIMATIONS */
 .animBtns {
@@ -502,6 +528,11 @@ a {
   .judgeContents {
     width: 47%;
     margin-top: 3%;
+  }
+
+  /* DESKTOP PARTNERS SECTION */
+  .partnerSection {
+    padding: 10% 20%;
   }
 
   /* DESKTOP RESPONSIVE DISPLAY */
