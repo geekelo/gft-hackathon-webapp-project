@@ -310,6 +310,17 @@ a {
   filter: grayscale(1);
 }
 
+/* FOOTER SECTION */
+footer {
+  display: flex;
+  flex-direction: row;
+  padding: 3% 2%;
+  justify-content: center;
+  font-size: 0.9rem;
+  font-weight: 400;
+  gap: 8px;
+}
+
 /* TRANSITIONS AND ANIMATIONS */
 .animBtns {
   transition-property: background-color, color;
@@ -533,6 +544,24 @@ a {
   /* DESKTOP PARTNERS SECTION */
   .partnerSection {
     padding: 10% 20%;
+  }
+
+  .partnersSectionTitle .redUnderline {
+    width: 8%;
+  }
+
+  /* DESKTOP FOOTER SECTION */
+  footer {
+    padding: 3% 10%;
+    font-size: 1.1rem;
+    font-weight: 600;
+    gap: 18px;
+    align-content: center;
+  }
+
+  .footerText {
+    flex: 80%;
+    color: var(--navTopbar-bg);
   }
 
   /* DESKTOP RESPONSIVE DISPLAY */
