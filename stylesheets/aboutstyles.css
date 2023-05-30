@@ -295,18 +295,18 @@ footer {
   .navMainSection {
     position: static;
   }
-  
+
   .navSectionFix {
     position: fixed;
     right: 0;
     left: 0;
     top: 0;
   }
-  
+
   #logo {
     text-align: right;
   }
-  
+
   #menuContainer {
     flex: 95%;
     display: flex;
@@ -316,14 +316,14 @@ footer {
     align-items: center;
     padding-right: 27%;
   }
-  
+
   #menu {
     list-style: none;
     display: flex;
     flex-direction: row;
     align-content: center;
   }
-  
+
   .menuItems {
     font-weight: 700;
     padding-right: 9%;
@@ -338,15 +338,14 @@ footer {
   .pageMarker {
     border-bottom: 1.8px solid var(--primary-theme-color);
     width: 50%;
-
   }
-  
+
   .outlineBtns {
     font-weight: 700;
     border: 5px solid var(--primary-theme-color);
     padding: 2% 5%;
   }
-  
+
   .outlineBtns:hover {
     background-color: var(--primary-theme-color);
     color: var(--nav-bg-color);
@@ -376,7 +375,7 @@ footer {
     padding-top: 5%;
     margin-bottom: -1.5%;
   }
-  
+
   .emailCTAText {
     font-weight: 900;
   }
@@ -450,8 +449,8 @@ footer {
   .mobileOnly {
     display: none;
   }
-  
+
   .desktopOnly {
     display: flex;
   }
-}  
+} 
