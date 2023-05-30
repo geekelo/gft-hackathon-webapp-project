@@ -286,12 +286,12 @@ footer {
     list-style: none;
     color: var(--nav-bg-color);
   }
-  
+
   .navtopTexts {
     padding-right: 2%;
     margin-top: 0;
   }
-  
+
   .navMainSection {
     position: static;
   }
@@ -453,4 +453,4 @@ footer {
   .desktopOnly {
     display: flex;
   }
-} 
+}
