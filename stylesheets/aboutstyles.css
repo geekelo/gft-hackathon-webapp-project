@@ -18,9 +18,9 @@
 }
 
 body {
-    font-family: 'Lato', sans-serif;
-    font-style: normal;
-    margin: 0;
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  margin: 0;
 }
 
 header {
@@ -115,7 +115,7 @@ a {
 
 .titleText {
   font-weight: 900;
-  font-size: 2.0rem;
+  font-size: 2rem;
   line-height: 2.2rem;
   color: var(--primary-theme-color);
   padding-bottom: 5%;
@@ -125,7 +125,6 @@ a {
   width: 15%;
   border-color: var(--primary-theme-color);
 }
-
 
 .titleSummary {
   margin-top: -4%;
@@ -166,8 +165,8 @@ a {
 /* MAIN SECTION */
 .mainSection {
   display: grid;
-  grid-template-columns: auto;
   grid-template: column;
+  grid-template-columns: auto;
   row-gap: 4px;
   background-color: var(--border-dark);
 }
@@ -202,8 +201,8 @@ a {
 }
 
 .featuresText {
- width: 80%;
- margin: auto;
+  width: 80%;
+  margin: auto;
 }
 
 .featuresImage {
@@ -235,6 +234,7 @@ a {
   background-image: var(--mission-image);
   background-size: cover;
 }
+
 .purposeCardsTitles {
   font-weight: 900;
 }
@@ -254,9 +254,9 @@ footer {
 
 /* TRANSITIONS AND ANIMATIONS */
 .animBtns {
-transition-property: background-color, color;
-transition-duration: 0.4s;
-transition-delay: 0.1s, 0.2s;
+  transition-property: background-color, color;
+  transition-duration: 0.4s;
+  transition-delay: 0.1s, 0.2s;
 }
 
 /* RESPONSIVE DISPLAY */
@@ -267,7 +267,7 @@ transition-delay: 0.1s, 0.2s;
 .mobileOnly {
   display: flex;
 }
-  
+
 .active .outlineBtns {
   border: 5px solid var(--nav-bg-color);
   padding: 5% 5%;
