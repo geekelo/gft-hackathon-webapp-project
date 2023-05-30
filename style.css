@@ -284,31 +284,28 @@ a {
   font-weight: 700;
 }
 
-  /* PARTNERS SECTION */
-  .partnerSection {
-    background-color: var(--navTopbar-bg);
-    display: flex;
-    flex-direction: column;
-    padding: 15% 3%;
-    gap: 5px;
-  } 
-
-  .logoContainer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    gap: 18px;
-    flex-wrap: wrap;
-  }
-
-  .partnersSectionTitle {
-    color: var(--nav-bg-color);
-  }
-
-  .partners {
-    filter: grayscale(1);
-  }
+/* PARTNERS SECTION */
+.partnerSection {
+  background-color: var(--navTopbar-bg);
+  display: flex;
+  flex-direction: column;
+  padding: 15% 3%;
+  gap: 5px;
+}
+.logoContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+.partnersSectionTitle {
+  color: var(--nav-bg-color);
+}
+.partners {
+  filter: grayscale(1);
+}
 
 /* TRANSITIONS AND ANIMATIONS */
 .animBtns {
