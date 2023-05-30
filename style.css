@@ -10,6 +10,7 @@
   --navTopbar-bg: #3e3e3e;
   --hackathon-stages-bg: url('./media-library/stages-bg.jpg');
   --stages-subcontainers-color: rgba(60, 63, 70, 0.7);
+  --lightgray : #f2f2f2;
 }
 
 body {
@@ -310,6 +311,10 @@ a {
   filter: grayscale(1);
 }
 
+.partners:hover {
+  filter: none;
+}
+
 /* FOOTER SECTION */
 footer {
   display: flex;
@@ -319,6 +324,7 @@ footer {
   font-size: 0.9rem;
   font-weight: 400;
   gap: 8px;
+  background-color: var(--lightgray);
 }
 
 /* TRANSITIONS AND ANIMATIONS */
@@ -553,15 +559,36 @@ footer {
   /* DESKTOP FOOTER SECTION */
   footer {
     padding: 3% 10%;
+    padding-bottom: 0.5%;
     font-size: 1.1rem;
-    font-weight: 600;
+    font-weight: 900;
     gap: 18px;
-    align-content: center;
+  }
+
+  .footerLogo {
+    width: 300px;
   }
 
   .footerText {
     flex: 80%;
     color: var(--navTopbar-bg);
+    font-weight: 800;
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    justify-content: start;
+  }
+
+  .footerTitle {
+    line-height: 1.18rem;
+    margin: 0;
+    margin-top: 6%;
+  }
+
+  .copyrightText {
+    line-height: 0;
+    font-size: 1rem;
+    font-weight: 400;
   }
 
   /* DESKTOP RESPONSIVE DISPLAY */
