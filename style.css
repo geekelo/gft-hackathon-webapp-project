@@ -292,6 +292,7 @@ a {
   padding: 15% 3%;
   gap: 5px;
 }
+
 .logoContainer {
   display: flex;
   flex-direction: row;
@@ -300,9 +301,11 @@ a {
   gap: 18px;
   flex-wrap: wrap;
 }
+
 .partnersSectionTitle {
   color: var(--nav-bg-color);
 }
+
 .partners {
   filter: grayscale(1);
 }
