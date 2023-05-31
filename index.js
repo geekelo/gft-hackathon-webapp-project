@@ -72,7 +72,7 @@ const lengthOfJudges = featuredJudges.length;
 const judgesContainer = document.querySelector('.judgesCardsContainer');
 
 
-for (let index = 0; index < lengthOfJudges; index++){
+function loadsFeaturedSection(index){
 
 const judgesCards = document.createElement('div');
 judgesCards.className = 'judgesCards';
@@ -113,3 +113,61 @@ contents.innerHTML += judgeName.outerHTML + judgeIntro.outerHTML + judgeDivider.
 judgesCards.innerHTML += patternImg.outerHTML + judgeImageContainer.outerHTML + contents.outerHTML;
 
 }
+
+// Initialize display of featured judges ONLOADs
+//tops the display on  mobile only after every 2 cards displayed
+let indexCount = 1;
+for (let index = (indexCount - 1); index < lengthOfJudges; index++){
+  loadsFeaturedSection(index);
+
+  if ((indexCount % 2) === 0 && window.innerWidth < 768) {
+    indexCount++;
+    break;
+  }
+  indexCount++;
+}
+
+// Loads more judges cards when button with this function is clicked.
+// Changes the text and update onclick function after last card displays
+function revealFeatures() {
+for (let index = (indexCount - 1); index < lengthOfJudges; index++){
+  loadsFeaturedSection(index);
+
+  if ((indexCount % 2) === 0) {
+    indexCount++;
+    break;
+  }
+  indexCount++;
+  
+}
+if (indexCount >= featuredJudges.length) {
+     document.querySelector('.loadMore'). textContent = "VIEW LESS";
+     document.querySelector('.loadMore').setAttribute('onclick', 'collapseFeature()');
+  }
+}
+
+
+// Deletes all the judges cards, loads the display of cards again
+//changes button text and update onclic attriute again to enable expanded display
+function collapseFeature() {
+let judgeCardsArr = document.getElementsByClassName('judgesCards');
+let judgeCardsArray = Array.from(judgeCardsArr); // convert element lists to array
+judgeCardsArray.forEach(function(e){
+  e.remove();
+});
+
+indexCount = 1;
+for (index = (indexCount - 1); index < lengthOfJudges; index++){
+  loadsFeaturedSection(index);
+
+  if ((indexCount % 2) === 0 && window.innerWidth < 768) {
+    indexCount++;
+    break;
+  }
+  indexCount++;
+}
+
+document.querySelector('.loadMore'). textContent = "LOAD MORE";
+document.querySelector('.loadMore').setAttribute('onclick', 'revealFeatures()');
+}
+

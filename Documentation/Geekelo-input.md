@@ -107,4 +107,15 @@ Hi, I am Eloghene Otiede @geekelo, the software engineer to design, build and de
 - Update Readme file with relevant information concerning the project
 - Update Documentation file
 - Add MIT liscence
+
+## Milestone 10
+
+### Milestones: LOAD MORE BUTTON (version 1.0.0)
+
+#### Things worked on;
+- Add structure for loadmore button
+- Add style rules for button
+- Add functionality using JS to load more cards and view less
+- Button loads two cards per click
+- Button reduces card to two when view less is triggered
 > NO FRAMEWORKS WERE USED IN version 1.0.0
