@@ -88,6 +88,11 @@ Hi, I am Eloghene Otiede @geekelo, the software engineer to design, build and de
 ## Milestone 9
 ### Milestones: DEPLOYMENT (version 1.0.0)
 #### Things worked on;
+- Test project for bugs
+- Test pages, functions, etc to check responsiveness on mobile and desktop screen sizes
+- Verify that all errors are fixed
+- Deploy project using Github pages
+- Include the LIVE DEMO link in the Readme file
 - Update Readme file with relevant information concerning the project
 - Update Documentation file
 - Add MIT liscence
