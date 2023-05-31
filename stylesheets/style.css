@@ -143,7 +143,7 @@ a {
   font-weight: 900;
   padding-top: 4%;
   font-size: 2rem;
-  line-height: 0.3rem;
+  line-height: 1.95rem;
 }
 
 .titleVenue {
@@ -237,9 +237,9 @@ a {
   display: flex;
   flex-direction: row;
   width: 100%;
-  flex-wrap: wrap;
   font-weight: 900;
-  gap: 10px;
+  justify-content: center;
+  gap: 0;
 }
 
 .judgePatternBgs {
@@ -258,16 +258,17 @@ a {
 .judgeImages {
   margin-top: 7%;
   margin-left: -9%;
+  padding-right: 2%;
 }
 
 .judgeContents {
-  width: 60%;
+  width: 52%;
   margin-top: 4%;
 }
 
 .judgeNames {
   font-weight: 900;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   line-height: 0;
 }
 
@@ -287,6 +288,21 @@ a {
   font-size: 80%;
   box-sizing: border-box;
   font-weight: 700;
+}
+
+.loadMore {
+  border: 2px solid var(--primary-font-color);
+  padding: 2%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  font-weight: 700;
+}
+
+.loadMore:hover {
+  background-color: var(--primary-theme-color);
+  border: none;
+  color: var(--nav-bg-color);
 }
 
 /* PARTNERS SECTION */
@@ -329,6 +345,10 @@ footer {
   font-weight: 400;
   gap: 8px;
   background-color: var(--lightgray);
+}
+
+.footerLogo {
+  width: 100%;
 }
 
 /* TRANSITIONS AND ANIMATIONS */
@@ -523,7 +543,7 @@ footer {
 
   /* DESKTOP FEATURED JUDGES SECTION */
   #featuredJudgesSection {
-    padding: 5% 10%;
+    padding: 5% 1%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -532,9 +552,9 @@ footer {
   .judgesCardsContainer {
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 1px;
     margin: auto;
     padding-top: 5%;
+    width: 100%;
   }
 
   .judgesCards {
@@ -542,17 +562,20 @@ footer {
     flex-direction: row;
     justify-content: center;
     flex: 45%;
+    gap: 1rem;
   }
 
   .judgeImages {
-    width: 30%;
-    margin-left: -7%;
+    width: 8%;
+    margin-left: -6%;
     margin-top: 6%;
+    padding-right: 6.8rem;
   }
 
   .judgeContents {
-    width: 47%;
+    width: 45%;
     margin-top: 3%;
+    padding-right: 0.15rem;
   }
 
   /* DESKTOP PARTNERS SECTION */
