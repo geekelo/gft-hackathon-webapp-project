@@ -249,6 +249,8 @@ a {
   flex-direction: column;
   padding: 15% 3%;
   gap: 5px;
+  z-index: -9;
+  position: relative;
 }
 
 .logoContainer {
@@ -266,11 +268,15 @@ a {
 }
 
 .partners {
-  filter: grayscale(1);
+  filter: grayscale(-1);
+  -webkit-filter: grayscale(100%);
+  position: static;
+  z-index: -1;
 }
 
 .partners:hover {
   filter: none;
+  -webkit-filter: none;
 }
 
 /* FOOTER SECTION */
