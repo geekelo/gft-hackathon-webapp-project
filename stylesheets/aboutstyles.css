@@ -199,7 +199,6 @@ a {
 
 .lightRedUnderline {
   color: var(--primary-theme-color);
-  opacity: 0.5;
   width: 8%;
 }
 
