@@ -356,7 +356,6 @@ footer {
 
 .footerLogo {
   width: 95%;
-  align-items: center;
   display: flex;
   align-items: start;
   box-sizing: border-box;
@@ -615,7 +614,6 @@ footer {
 
   .footerLogo {
     width: 300px;
-    align-items: center;
     display: flex;
     align-items: start;
     box-sizing: border-box;
