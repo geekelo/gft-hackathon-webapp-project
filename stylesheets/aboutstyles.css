@@ -282,17 +282,27 @@ a {
 footer {
   display: flex;
   flex-direction: row;
-  padding: 3% 2%;
-  justify-content: center;
+  padding: 0% 2%;
+  justify-content: start;
   font-size: 0.9rem;
   font-weight: 400;
   gap: 8px;
   background-color: var(--lightgray);
   color: var(--primary-font-color);
+  align-items: start;
 }
 
 .footerLogo {
-  width: 100%;
+  width: 95%;
+  align-items: center;
+  display: flex;
+  align-items: start;
+  box-sizing: border-box;
+  margin-top: 0.5rem;
+}
+
+.copyrightText {
+  line-height: 0;
 }
 
 /* TRANSITIONS AND ANIMATIONS */
@@ -482,7 +492,7 @@ footer {
   .footerTitle {
     line-height: 1.18rem;
     margin: 0;
-    margin-top: 6%;
+    padding-top: 1.5rem;
   }
 
   .copyrightText {
