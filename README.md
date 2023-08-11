@@ -62,8 +62,8 @@ After you're finished please remove all the comments and instructions.
 
 # 📖 Global Female Hackathon Webpage <a name="about-project"></a>
 
-**Global Female Hackathon Webpage** is a responsive, functional and very aesthetic website template designed and developed to help female hackathon organizers fulfil the goal of narrowing the gender gap, promoting diversity within the tech industry, and bringing together brilliant minds from around the world to collaborate, innovate, and make a lasting impact. The design is simple and vibrant. The layout contains sections to display vital information. Details as color contrasts, font-sizes, etc were given attention inorder to improver the user experience. 
-Head to the <a href="#live-demo">LIVE DEMO SECTIOON</a> for Live links and presentations
+**Global Female Hackathon Webpage** is a responsive, functional, and very aesthetic website template designed and developed to help female hackathon organizers fulfill the goal of narrowing the gender gap, promoting diversity within the tech industry, and bringing together brilliant minds from around the world to collaborate, innovate, and make a lasting impact. The design is simple and vibrant. The layout contains sections to display vital information. Details such as color contrasts, font sizes, etc. were given attention in order to improve the user experience. 
+Head to the <a href="#live-demo">LIVE DEMO SECTION</a> for Live links and presentations
 
 ## 🛠 Built With <a name="built-with"></a>
 
